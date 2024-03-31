@@ -1,0 +1,23 @@
+npm init -y
+npm i typescript 
+npx tsc --init --rootdir src --outdir lib
+npx tsc --watch
+
+
+/////////////////////////////////////////////////////
+
+npx tsc --init --rootdir src --outdir lib
+
+// src -- typescript 
+ 
+// lib -- index.js
+
+"Install node 
+Run command
+2) npm --version
+3) node --version
+4) npx --version"
+"npm init -y
+npm  i typescript (To install typescript complier)
+npx tsc --init --rootdir src --outdir lib"
+npx tsc --watch
