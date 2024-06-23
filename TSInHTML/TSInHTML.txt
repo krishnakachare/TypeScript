@@ -1,0 +1,12 @@
+
+How to include a TypeScript file into a HTML file
+===================================================
+-TypeScript code does not directly run on the browser.
+-Convert TypeScript code to Javascript, then include in HTML file
+-Install NodeJS
+-Install TypeScript 
+ npm install -g typescript
+-verify if typescript is installed?
+ tsc -v  (tsc - Typescript compiler)
+-To convert TypeScript to Javascript
+ tsc <fileName.ts>

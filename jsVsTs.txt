@@ -1,0 +1,25 @@
+Typescript  = Javascript + (stongly Typed, Generics, Interface)	
+    
+
+    Javascript					 TypeScript
+---------------------------------------------------------
+1.strongly typed-No				1.strongly typed-yes
+2.directly run on browser		2.not directly run on the browser
+3.interface-No					3.interface - Yes
+4.optional parameters-No		4.optional parameters-yes
+5.interpreted language			5.compiles the code
+6.errors at runtime				6.errors during the development time
+7.generics-no					7.generics-yes
+
+
+How to include a TypeScript file into a HTML file
+===================================================
+-TypeScript code does not directly run on the browser.
+-Convert TypeScript code to Javascript, then include in HTML file
+-Install NodeJS
+-Install TypeScript 
+ npm install -g typescript
+-verify if typescript is installed?
+ tsc -v  (tsc - Typescript compiler)
+-To convert TypeScript to Javascript
+ tsc <fileName.ts>
