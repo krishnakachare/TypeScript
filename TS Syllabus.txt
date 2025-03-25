@@ -100,3 +100,8 @@
 - Prettier for Code Formatting  
 - Writing Clean and Maintainable TypeScript Code  
 - TypeScript Best Practices  
+
+
+https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+https://www.tutorialsteacher.com/typescript/typescript-overview
+https://www.typescripttutorial.net/

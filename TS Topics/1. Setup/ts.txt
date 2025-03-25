@@ -26,3 +26,5 @@ tsc means typescript compiler. tsconfig file contains set of rules that typescri
 Typescript will check data types in two ways
 1. type annotation: we have to explicitly mention the data type
 2.type inference: based on initial value ts only guess the type
+
+

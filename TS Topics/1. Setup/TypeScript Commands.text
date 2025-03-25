@@ -30,3 +30,32 @@ npm init -y
 npm i typescript 
 npx tsc --init --rootdir src --outdir lib
 npx tsc --watch
+
+
+# Prerequisits:
+    NodeJs: Goto https://nodejs.org/en/download. download windows installer(LTS).
+    https://nodejs.org/en
+    node -v  
+    npm -v
+    npm update
+    VSC:  Goto https://code.visualstudio.com/download & download
+    js: Basic Javascript
+
+# Setup: 
+    npm init -y
+    npm install -g typescript
+    tsc -v
+
+    tsc fileName.ts
+    tsc fileName.ts -watch 
+    node fileName.js 
+
+    tsc --init
+
+    Run the following command in PowerShell as Administrator:
+        Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+        npx tsc fileName.ts
+
+    tsc src/fileName.ts --outDir dist
+    tsc src/fileName.ts --outDir ../dist
