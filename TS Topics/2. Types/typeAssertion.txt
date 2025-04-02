@@ -1,0 +1,68 @@
+### Type Assertions in TypeScript
+Type assertions in TypeScript allow you to tell the compiler that you know more about a value's type than it does. It lets you override TypeScript’s default type inference and treat a value as a specific type.
+
+### Syntax of Type Assertion
+There are two ways to use type assertions:
+
+1. Using the `as` keyword (Preferred)
+ 
+   let value: unknown = "Hello, TypeScript!";
+   let strLength: number = (value as string).length;
+   console.log(strLength); // ✅ Output: 17
+   
+2. Using angle brackets `< >` (Not allowed in `.tsx` files)
+ 
+   let value: unknown = "Hello, TypeScript!";
+   let strLength: number = (<string>value).length;
+   console.log(strLength); // ✅ Output: 17
+
+### When to Use Type Assertions?
+Type assertions are useful when you know the type of a value but TypeScript cannot infer it correctly.
+
+#### Example 1: Accessing Properties of an `unknown` Type
+typescript
+let someValue: unknown = "I am a string";
+
+// TypeScript doesn't allow direct property access
+// console.log(someValue.length); // ❌ Error
+
+// Using type assertion
+let strLength = (someValue as string).length;
+console.log(strLength); // ✅ Output: 14
+
+#### Example 2: Working with `document.getElementById`
+TypeScript’s `document.getElementById` returns `HTMLElement | null`, so you must assert it to a more specific type.
+
+typescript
+let inputElement = document.getElementById("username") as HTMLInputElement;
+
+// Now we can safely access `value` property
+inputElement.value = "John Doe";  // ✅ No error
+
+#### Example 3: Type Assertion with Objects
+typescript
+type Employee = { name: string; id: number };
+let emp = {} as Employee;  // Asserting an empty object to Employee type
+emp.name = "Alice";
+emp.id = 101;
+
+console.log(emp); // ✅ Output: { name: 'Alice', id: 101 }
+
+
+### ⚠️ Important Notes:
+- Type assertions do not perform type conversions. They only tell the compiler to trust you.
+- You cannot assert incompatible types.
+  
+  let num: number = 10;
+  // let str = num as string; // ❌ Error: Type 'number' cannot be converted to 'string'
+  
+- Double assertions (`unknown → T → desired type`) can bypass type checks, but use cautiously:
+  
+  let value: any = "Hello";
+  let num = (value as unknown as number);  // ❌ Not recommended
+  
+### Conclusion
+Use type assertions when:
+✅ TypeScript cannot infer the type correctly  
+✅ You are sure about the actual type of a value  
+✅ You want to work with DOM elements safely  

@@ -1,9 +1,0 @@
-Two types of datatypes in TypeScript
-1) Premitive = 
-   E.g. number,string,boolean,null,undefined,void etc..
-2) User defined datatypes = 
-   E.g. array, object, set, tuple
-
-   # set = we used set datatypes for store only unquie values
-   # void = if dont want to return any value( or return function )
-      
