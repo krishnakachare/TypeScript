@@ -1,36 +1,9 @@
-///////////////// npm ////////////////////////
-
-npm init -y
-
-npm install -g typescript --save-dev
-
-made src folder
-
-npx tsc --init --rootdir src --outdir lib
-
-// src--> typescript 
-// lib--> index.js
-
-npx tsc --watch
-
- npm --version
- node --version
- npx --version
-
- npx tsc --watch
-
-
-////////////////// yarn ///////////////////////
+--------/ yarn /----------
 
 yarn add typescript --dev
 yarn tsc
 
-
-npm init -y
-npm i typescript 
-npx tsc --init --rootdir src --outdir lib
-npx tsc --watch
-
+--------/ npm /----------
 
 # Prerequisits:
     NodeJs: Goto https://nodejs.org/en/download. download windows installer(LTS).
@@ -41,10 +14,21 @@ npx tsc --watch
     VSC:  Goto https://code.visualstudio.com/download & download
     js: Basic Javascript
 
+    npx tsc --watch:
+        npm --version
+        node --version
+        npx --version
+
 # Setup: 
     npm init -y
-    npm install -g typescript
+    npm install -g typescript --save-dev
+
     tsc -v
+
+    npx tsc --watch
+    npx tsc --init --rootdir src --outdir lib
+        // src--> typescript 
+        // lib--> index.js
 
     tsc fileName.ts
     tsc fileName.ts -watch 

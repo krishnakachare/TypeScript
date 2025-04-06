@@ -1,14 +1,14 @@
 # What is TypeScript?  
     TypeScript is a strongly typed, object-oriented, compiled programming language developed by Microsoft. It is a superset of JavaScript, meaning it extends JavaScript by adding static typing, interfaces, and advanced tooling support. TypeScript code is transpiled into JavaScript, making it compatible with any JavaScript environment, including browsers and Node.js.
 
-### Example of TypeScript Code:
+# Example of TypeScript Code:
     function greet(name: string): string {
         return `Hello, ${name}!`;
     }
 
 console.log(greet("Alice")); // ✅ Valid
 console.log(greet(123)); // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'.
-```
+
 Here, `name: string` enforces that only a string can be passed, preventing runtime errors.
 
 ----------------------------------------------
@@ -25,100 +25,95 @@ Today, TypeScript is widely used in large-scale applications, including framewor
 -------------------------------------------
 # Why Use TypeScript?  
 
-## 1. Benefits over JavaScript  
-| Feature       | JavaScript | TypeScript |
-|--------------|-----------|------------|
-| Type Safety | No static type checking | Supports static types |
-| Code Readability | Harder to understand in large codebases | Enforces clear structure |
-| Error Detection | Runtime errors only | Detects errors during compilation |
-| IDE Support | Limited autocompletion & hints | Better autocompletion, refactoring & debugging |
+1. Benefits over JavaScript  
+    | Feature       | JavaScript | TypeScript |
+    |--------------|-----------|------------|
+    | Type Safety | No static type checking | Supports static types |
+    | Code Readability | Harder to understand in large codebases | Enforces clear structure |
+    | Error Detection | Runtime errors only | Detects errors during compilation |
+    | IDE Support | Limited autocompletion & hints | Better autocompletion, refactoring & debugging |
 
-## 2. Dynamic Typing vs Static Typing  
-### Dynamic Typing (JavaScript)
+2. Dynamic Typing vs Static Typing  
+# Dynamic Typing (JavaScript)
 JavaScript uses dynamic typing, meaning variable types are determined at runtime and can change.
-```javascript
+
 let message = "Hello"; // message is a string
 message = 123; // No error, type is changed to number
 console.log(message); // Output: 123
-```
+
 This flexibility can lead to unintended bugs.
 
-### Static Typing (TypeScript)
-TypeScript uses static typing, meaning variable types are set at compile-time, preventing type errors.
-```typescript
-let message: string = "Hello";
-message = 123; // ❌ Error: Type 'number' is not assignable to type 'string'
-console.log(message);
-```
+# Static Typing (TypeScript)
+    TypeScript uses static typing, meaning variable types are set at compile-time, preventing type errors.
+
+    let message: string = "Hello";
+    message = 123; // ❌ Error: Type 'number' is not assignable to type 'string'
+    console.log(message);
+
 Static typing helps catch errors before the code runs.
 
-## 3. Type Safety & Static Typing  
+3. Type Safety & Static Typing  
 In JavaScript, errors appear at runtime:
-```javascript
-function add(a, b) {
-    return a + b;
-}
-console.log(add(5, "10")); // Output: "510" (string concatenation instead of addition)
-```
-In TypeScript, type checking prevents such errors at compile-time:
-```typescript
-function add(a: number, b: number): number {
-    return a + b;
-}
-console.log(add(5, "10")); // ❌ Error: Argument of type 'string' is not assignable to parameter of type 'number'.
-```
 
-## 4. Readability & Maintainability  
+    function add(a, b) {
+        return a + b;
+    }
+console.log(add(5, "10")); // Output: "510" (string concatenation instead of addition)
+
+In TypeScript, type checking prevents such errors at compile-time:
+
+    function add(a: number, b: number): number {
+        return a + b;
+    }
+console.log(add(5, "10")); // ❌ Error: Argument of type 'string' is not assignable to parameter of type 'number'.
+
+4. Readability & Maintainability  
 TypeScript enforces strict typing, making it easier to read, maintain, and refactor large codebases.
 
 Example:
-```typescript
-interface User {
-    name: string;
-    age: number;
-}
+        interface User {
+            name: string;
+            age: number;
+        }
 
 const user: User = { name: "John", age: 25 }; // ✅ Valid
 const invalidUser: User = { name: "John" }; // ❌ Error: Property 'age' is missing
 
-## 5. Improved Developer Experience  
-- Better IntelliSense in IDEs (like VS Code)  
-- Autocomplete & Type Hints  
-- Code Refactoring Support  
-- Built-in Documentation  
+5. Improved Developer Experience  
+    - Better IntelliSense in IDEs (like VS Code)  
+    - Autocomplete & Type Hints  
+    - Code Refactoring Support  
+    - Built-in Documentation  
 
 ------------------------------------------------
 # JavaScript vs TypeScript  
 
-## 1. Key Differences
-| Feature           | JavaScript | TypeScript |
-|------------------|-----------|------------|
-| Typing | Dynamic (no static types) | Static (optional types) |
-| Compilation | Not required | Compiled to JavaScript |
-| Error Detection | Runtime errors | Compile-time errors |
-| Support for Classes & Interfaces | ES6 introduced classes | Fully supports interfaces & OOP |
-| Code Readability | More flexible, but harder to maintain | Enforces better code structure |
+1. Key Differences
+    | Feature           | JavaScript | TypeScript |
+    |------------------|-----------|------------|
+    | Typing | Dynamic (no static types) | Static (optional types) |
+    | Compilation | Not required | Compiled to JavaScript |
+    | Error Detection | Runtime errors | Compile-time errors |
+    | Support for Classes & Interfaces | ES6 introduced classes | Fully supports interfaces & OOP |
+    | Code Readability | More flexible, but harder to maintain | Enforces better code structure |
 
-## 2. Pros and Cons of TypeScript  
+---------------------------------
+2. Pros and Cons of TypeScript  
+# ✅ Pros  
+    ✔ Type Safety – Reduces bugs & improves reliability.  
+    ✔ Better Developer Experience – Great tooling support (VS Code, WebStorm).  
+    ✔ Improved Readability – Clearer code with explicit types.  
+    ✔ Object-Oriented Features – Supports interfaces, generics, and enums.  
+    ✔ Scalability – Ideal for large-scale applications.  
 
-### ✅ Pros  
-✔ Type Safety – Reduces bugs & improves reliability.  
-✔ Better Developer Experience – Great tooling support (VS Code, WebStorm).  
-✔ Improved Readability – Clearer code with explicit types.  
-✔ Object-Oriented Features – Supports interfaces, generics, and enums.  
-✔ Scalability – Ideal for large-scale applications.  
-
-### ❌ Cons  
-✖ Compilation Overhead – Requires transpilation (TypeScript → JavaScript).  
-✖ Learning Curve – More complex than JavaScript for beginners.  
-✖ Not Natively Supported by Browsers – Must compile to JavaScript.  
-✖ More Boilerplate Code – Enforcing types adds extra syntax.  
+# ❌ Cons  
+    ✖ Compilation Overhead – Requires transpilation (TypeScript → JavaScript).  
+    ✖ Learning Curve – More complex than JavaScript for beginners.  
+    ✖ Not Natively Supported by Browsers – Must compile to JavaScript.  
+    ✖ More Boilerplate Code – Enforcing types adds extra syntax.  
 
 ---------------------------------
 # Conclusion
-- TypeScript adds type safety and modern features to JavaScript.  
-- It is widely used in enterprise applications, particularly for large projects.  
-- While JavaScript is flexible, TypeScript prevents runtime errors and improves maintainability.  
-
-If you're working on a large application or enterprise software, TypeScript is a great choice. 🚀
-
+    - TypeScript adds type safety and modern features to JavaScript.  
+    - It is widely used in enterprise applications, particularly for large projects.  
+    - While JavaScript is flexible, TypeScript prevents runtime errors and improves maintainability.  
