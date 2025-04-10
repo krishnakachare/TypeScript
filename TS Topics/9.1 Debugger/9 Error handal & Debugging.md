@@ -1,7 +1,3 @@
-Awesome! Now, let's dive into **Chapter 9: Error Handling and Debugging**, an essential topic for building reliable applications.
-
----
-
 # 📘 Chapter 9: Error Handling and Debugging
 
 ---
