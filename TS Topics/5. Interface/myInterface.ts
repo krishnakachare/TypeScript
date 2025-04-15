@@ -22,7 +22,7 @@ githubToken: "github",
 startTrail: () => {
     return "trail started"
 },
-getCoupon: (name: "hitesh10", off: 10) => {
+getCoupon: (name: "KK", off: 10) => {
     return 10
 }
 }

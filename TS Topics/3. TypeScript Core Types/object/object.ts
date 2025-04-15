@@ -3,7 +3,7 @@
 //   age: number;
 // } = {
 const person = {
-  name: 'Maximilian',
+  name: 'Krishna',
   age: 30
 };
 

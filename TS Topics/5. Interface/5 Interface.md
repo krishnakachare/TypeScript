@@ -13,7 +13,7 @@ interface Person {
 }
 
 const user: Person = {
-  name: "Alice",
+  name: "KK",
   age: 30,
 };
 ```
@@ -68,7 +68,7 @@ interface User {
   email?: string; // optional
 }
 
-const user1: User = { name: "John" };
+const user1: User = { name: "KK" };
 ```
 
 ### Readonly Properties

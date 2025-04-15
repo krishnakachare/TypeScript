@@ -8,11 +8,11 @@ interface Person {
 let user1: Person;
 
 user1 = {
-  name: 'Max',
+  name: "Krishna",
   age: 30,
   greet(phrase: string) {
-    console.log(phrase + ' ' + this.name);
-  }
+    console.log(phrase + " " + this.name);
+  },
 };
 
-user1.greet('Hi there - I am');
+user1.greet("Hi there - I am");

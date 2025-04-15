@@ -105,5 +105,4 @@ When your class interacts with functions in the library from which the original 
 TypeScript will consider your class as indistinguishable from the original class in the library: 
 Thanks to the way extending works, your class will have all of the methods and properties of the original class, 
 which is all structural subtyping requests.
-
 */

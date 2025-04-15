@@ -1,29 +1,29 @@
-# 📘 Chapter 12: Tooling and Best Practices  
+# 📘 Chapter 12: Tooling and Best Practices
 
 ---
 
-## 🔹 Why Tooling and Best Practices Matter  
+## 🔹 Why Tooling and Best Practices Matter
 
-- Ensures **code consistency** and reduces bugs.  
-- Helps in **maintaining large codebases** effectively.  
-- Improves **collaboration** in team projects.  
-- Enhances **performance and scalability**.  
+- Ensures **code consistency** and reduces bugs.
+- Helps in **maintaining large codebases** effectively.
+- Improves **collaboration** in team projects.
+- Enhances **performance and scalability**.
 
 ---
 
-## 🛠 Essential Tools for TypeScript Development  
+## 🛠 Essential Tools for TypeScript Development
 
-### 1️⃣ **TypeScript Linters (`ESLint`)**  
+### 1️⃣ **TypeScript Linters (`ESLint`)**
 
-**Linting** helps detect and fix potential issues in TypeScript code.  
+**Linting** helps detect and fix potential issues in TypeScript code.
 
-### 🛠 Installing ESLint for TypeScript  
+### 🛠 Installing ESLint for TypeScript
 
 ```sh
 npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-### 🏗️ Configuring ESLint (`.eslintrc.json`)  
+### 🏗️ Configuring ESLint (`.eslintrc.json`)
 
 ```json
 {
@@ -36,7 +36,7 @@ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslin
 }
 ```
 
-Run ESLint:  
+Run ESLint:
 
 ```sh
 npx eslint src/**/*.ts
@@ -44,17 +44,17 @@ npx eslint src/**/*.ts
 
 ---
 
-### 2️⃣ **Code Formatting (`Prettier`)**  
+### 2️⃣ **Code Formatting (`Prettier`)**
 
-Prettier ensures **consistent code formatting** across the project.  
+Prettier ensures **consistent code formatting** across the project.
 
-### 🛠 Installing Prettier  
+### 🛠 Installing Prettier
 
 ```sh
 npm install --save-dev prettier eslint-config-prettier
 ```
 
-### 🏗️ Configuring Prettier (`.prettierrc`)  
+### 🏗️ Configuring Prettier (`.prettierrc`)
 
 ```json
 {
@@ -64,7 +64,7 @@ npm install --save-dev prettier eslint-config-prettier
 }
 ```
 
-Run Prettier:  
+Run Prettier:
 
 ```sh
 npx prettier --write src/**/*.ts
@@ -72,17 +72,17 @@ npx prettier --write src/**/*.ts
 
 ---
 
-### 3️⃣ **Testing TypeScript Code (`Jest`)**  
+### 3️⃣ **Testing TypeScript Code (`Jest`)**
 
-Jest is a testing framework for unit and integration testing in TypeScript.  
+Jest is a testing framework for unit and integration testing in TypeScript.
 
-### 🛠 Installing Jest with TypeScript  
+### 🛠 Installing Jest with TypeScript
 
 ```sh
 npm install --save-dev jest ts-jest @types/jest
 ```
 
-### 🏗️ Configuring Jest (`jest.config.js`)  
+### 🏗️ Configuring Jest (`jest.config.js`)
 
 ```js
 module.exports = {
@@ -91,7 +91,7 @@ module.exports = {
 };
 ```
 
-### 📌 Writing a Simple Test  
+### 📌 Writing a Simple Test
 
 ```ts
 function add(a: number, b: number): number {
@@ -103,7 +103,7 @@ test("adds numbers correctly", () => {
 });
 ```
 
-Run tests:  
+Run tests:
 
 ```sh
 npx jest
@@ -111,11 +111,11 @@ npx jest
 
 ---
 
-## 🔥 Best Practices for TypeScript Development  
+## 🔥 Best Practices for TypeScript Development
 
-### ✅ **1. Enable `strict` Mode in `tsconfig.json`**  
+### ✅ **1. Enable `strict` Mode in `tsconfig.json`**
 
-Strict mode ensures type safety and catches potential issues early.  
+Strict mode ensures type safety and catches potential issues early.
 
 ```json
 {
@@ -127,47 +127,53 @@ Strict mode ensures type safety and catches potential issues early.
 
 ---
 
-### ✅ **2. Avoid Using `any`**  
+### ✅ **2. Avoid Using `any`**
 
-❌ **Bad Practice:**  
+❌ **Bad Practice:**
+
 ```ts
 let data: any = "Hello"; // No type safety
 ```
 
-✅ **Good Practice:**  
+✅ **Good Practice:**
+
 ```ts
 let data: string = "Hello"; // Type-safe
 ```
 
 ---
 
-### ✅ **3. Use Interfaces Instead of Type Annotations for Objects**  
+### ✅ **3. Use Interfaces Instead of Type Annotations for Objects**
 
-❌ **Bad Practice:**  
+❌ **Bad Practice:**
+
 ```ts
-const user: { name: string; age: number } = { name: "Alice", age: 30 };
+const user: { name: string; age: number } = { name: "Krishna", age: 30 };
 ```
 
-✅ **Good Practice:**  
+✅ **Good Practice:**
+
 ```ts
 interface User {
   name: string;
   age: number;
 }
 
-const user: User = { name: "Alice", age: 30 };
+const user: User = { name: "Krishna", age: 30 };
 ```
 
 ---
 
-### ✅ **4. Use Type Aliases for Complex Unions**  
+### ✅ **4. Use Type Aliases for Complex Unions**
 
-❌ **Bad Practice:**  
+❌ **Bad Practice:**
+
 ```ts
 let status: "active" | "inactive" | "pending";
 ```
 
-✅ **Good Practice:**  
+✅ **Good Practice:**
+
 ```ts
 type Status = "active" | "inactive" | "pending";
 let status: Status;
@@ -175,36 +181,40 @@ let status: Status;
 
 ---
 
-### ✅ **5. Use `readonly` for Immutable Data**  
+### ✅ **5. Use `readonly` for Immutable Data**
 
-❌ **Bad Practice:**  
+❌ **Bad Practice:**
+
 ```ts
-let user = { name: "Alice" };
+let user = { name: "Krishna" };
 user.name = "Bob"; // Mutable
 ```
 
-✅ **Good Practice:**  
+✅ **Good Practice:**
+
 ```ts
 interface User {
   readonly name: string;
 }
 
-const user: User = { name: "Alice" };
+const user: User = { name: "Krishna" };
 // user.name = "Bob"; ❌ Error
 ```
 
 ---
 
-### ✅ **6. Use Generics for Reusability**  
+### ✅ **6. Use Generics for Reusability**
 
-❌ **Bad Practice:**  
+❌ **Bad Practice:**
+
 ```ts
 function identity(value: any): any {
   return value;
 }
 ```
 
-✅ **Good Practice:**  
+✅ **Good Practice:**
+
 ```ts
 function identity<T>(value: T): T {
   return value;
@@ -213,29 +223,31 @@ function identity<T>(value: T): T {
 
 ---
 
-### ✅ **7. Use Enums for Fixed Values**  
+### ✅ **7. Use Enums for Fixed Values**
 
-❌ **Bad Practice:**  
+❌ **Bad Practice:**
+
 ```ts
 const UserRole = {
   Admin: "ADMIN",
-  User: "USER"
+  User: "USER",
 };
 ```
 
-✅ **Good Practice:**  
+✅ **Good Practice:**
+
 ```ts
 enum UserRole {
   Admin = "ADMIN",
-  User = "USER"
+  User = "USER",
 }
 ```
 
 ---
 
-### ✅ **8. Use Path Aliases for Clean Imports**  
+### ✅ **8. Use Path Aliases for Clean Imports**
 
-Modify `tsconfig.json`:  
+Modify `tsconfig.json`:
 
 ```json
 {
@@ -248,27 +260,29 @@ Modify `tsconfig.json`:
 }
 ```
 
-Instead of:  
+Instead of:
+
 ```ts
 import Button from "../../components/Button";
 ```
 
-You can write:  
+You can write:
+
 ```ts
 import Button from "@components/Button";
 ```
 
 ---
 
-## 🎯 Summary of Tools & Best Practices  
+## 🎯 Summary of Tools & Best Practices
 
-| Tool / Concept | Purpose |
-|---------------|---------|
-| **ESLint** | Linting & Code Quality |
-| **Prettier** | Auto-formatting |
-| **Jest** | Unit Testing |
-| **Strict Mode** | Type Safety |
-| **Avoid `any`** | Enforce Type Safety |
-| **Use Interfaces** | For Object Types |
-| **Use Generics** | For Reusability |
-| **Use Path Aliases** | Clean Imports |
+| Tool / Concept       | Purpose                |
+| -------------------- | ---------------------- |
+| **ESLint**           | Linting & Code Quality |
+| **Prettier**         | Auto-formatting        |
+| **Jest**             | Unit Testing           |
+| **Strict Mode**      | Type Safety            |
+| **Avoid `any`**      | Enforce Type Safety    |
+| **Use Interfaces**   | For Object Types       |
+| **Use Generics**     | For Reusability        |
+| **Use Path Aliases** | Clean Imports          |

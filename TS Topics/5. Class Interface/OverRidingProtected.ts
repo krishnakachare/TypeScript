@@ -38,7 +38,7 @@ class AccountingDepartment extends Department {
   }
 
   addEmployee(name: string) {
-    if (name === 'Max') {
+    if (name === 'Krishna') {
       return;
     }
     this.employees.push(name);
@@ -53,9 +53,9 @@ class AccountingDepartment extends Department {
   }
 }
 
-const it = new ITDepartment('d1', ['Max']);
+const it = new ITDepartment('d1', ['Krishna']);
 
-it.addEmployee('Max');
+it.addEmployee('Krishna');
 it.addEmployee('Manu');
 
 // it.employees[2] = 'Anna';
@@ -70,7 +70,7 @@ const accounting = new AccountingDepartment('d2', []);
 
 accounting.addReport('Something went wrong...');
 
-accounting.addEmployee('Max');
+accounting.addEmployee('Krishna');
 accounting.addEmployee('Manu');
 
 accounting.printReports();

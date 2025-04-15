@@ -1,14 +1,14 @@
 function Logger(constructor: Function) {
-  console.log('Logging...');
+  console.log("Logging...");
   console.log(constructor);
 }
 
 @Logger
 class Person {
-  name = 'Max';
+  name = "Krishna";
 
   constructor() {
-    console.log('Creating person object...');
+    console.log("Creating person object...");
   }
 }
 

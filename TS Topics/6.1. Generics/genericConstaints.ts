@@ -60,7 +60,7 @@ class MyObject2 extends MyObject{
 }
 
 let obj = new MyObject2();
-obj.name = "Zeeshan";
+obj.name = "Krishna";
 
 let cont = new Container<MyObject2>();
 cont.add(obj);

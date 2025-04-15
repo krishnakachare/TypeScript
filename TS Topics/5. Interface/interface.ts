@@ -9,7 +9,7 @@ const isObj = <T>(arg: T): boolean => {
 console.log(isObj(true))
 console.log(isObj('John'))
 console.log(isObj([1, 2, 3]))
-console.log(isObj({ name: 'John' }))
+console.log(isObj({ name: "Krishna" }))
 console.log(isObj(null))
 
 ///////////////////////////////////
@@ -33,7 +33,7 @@ console.log(isTrue(''))
 console.log(isTrue(null))
 console.log(isTrue(undefined))
 console.log(isTrue({})) // modified
-console.log(isTrue({ name: 'Dave' }))
+console.log(isTrue({ name: 'KK' }))
 console.log(isTrue([])) // modified
 console.log(isTrue([1, 2, 3]))
 console.log(isTrue(NaN))
@@ -68,8 +68,8 @@ const processUser = <T extends HasID>(user: T): T => {
     return user
 }
 
-console.log(processUser({ id: 1, name: 'Dave' }))
-//console.log(processUser({ name: 'Dave'}))
+console.log(processUser({ id: 1, name: 'KK' }))
+//console.log(processUser({ name: 'KK'}))
 
 ///////////////////////////////////////
 

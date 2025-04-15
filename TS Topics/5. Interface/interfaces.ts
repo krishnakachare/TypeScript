@@ -22,7 +22,7 @@ printLabel({mylabel: "Size 10 Object"});//Case 2a missing or renamed property: E
 function printLabelX(labelledObj: {[x: string]:any}) {////Note now 'x' can have any name, just that the property should be of type string
   console.log(arguments[0]);
 }
-printLabelX({name: "Zia"});// Ok, `name` matched by index signature
+printLabelX({name: "Krishna"});// Ok, `name` matched by index signature
 
 
 //Case 3
@@ -43,7 +43,7 @@ var myObj2 = {mylabel: "Size 10 Object"};
 printLabel(myObj2);//Case 2a missing or renamed property: Error
 
 //Case 2b:
-var obj3= {name: "Zia"};
+var obj3= {name: "Krishna"};
 printLabelX(obj3);// Ok, `name` matched by index signature
 
 //Case 3
@@ -82,7 +82,7 @@ printLabelY({label: "Size 11 Object"});//Case 1 exact properties: OK
 printLabelY({mylabel: "Size 11 Object"});//Case 2a missing or renamed property: Error
 
 //Case 2b
-printLabelY2({name: "Zia"});// Ok, `name` matched by index signature
+printLabelY2({name: "Krishna"});// Ok, `name` matched by index signature
 
 //Case 3
 printLabelY({size: 11, label: "Size 11 Object"});//Case 3 Fresh Literal: Error no extra properties allowed
@@ -101,7 +101,7 @@ var myObjY2 = {mylabel: "Size 11 Object"};
 printLabelY(myObjY2);//Case 2a missing or renamed property: Error
 
 //Case 2b
-var objY3= {name: "Zia"};
+var objY3= {name: "Krishna"};
 printLabelY2(objY3);// Ok, `name` matched by index signature
 
 //Case 3

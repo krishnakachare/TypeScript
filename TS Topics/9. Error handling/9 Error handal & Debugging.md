@@ -61,7 +61,7 @@ try {
 ### 🔧 Using `console.log()`
 
 ```ts
-const user = { name: "Alice", age: 25 };
+const user = { name: "Krishna", age: 25 };
 console.log("User Info:", user);
 ```
 

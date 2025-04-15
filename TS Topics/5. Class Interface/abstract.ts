@@ -67,7 +67,7 @@ class AccountingDepartment extends Department {
   }
 
   addEmployee(name: string) {
-    if (name === 'Max') {
+    if (name === 'Krishna') {
       return;
     }
     this.employees.push(name);
@@ -83,12 +83,12 @@ class AccountingDepartment extends Department {
   }
 }
 
-const employee1 = Department.createEmployee('Max');
+const employee1 = Department.createEmployee('Krishna');
 console.log(employee1, Department.fiscalYear);
 
-const it = new ITDepartment('d1', ['Max']);
+const it = new ITDepartment('d1', ['Krishna']);
 
-it.addEmployee('Max');
+it.addEmployee('Krishna');
 it.addEmployee('Manu');
 
 // it.employees[2] = 'Anna';
@@ -105,7 +105,7 @@ accounting.mostRecentReport = 'Year End Report';
 accounting.addReport('Something went wrong...');
 console.log(accounting.mostRecentReport);
 
-accounting.addEmployee('Max');
+accounting.addEmployee('Krishna');
 accounting.addEmployee('Manu');
 
 // accounting.printReports();
