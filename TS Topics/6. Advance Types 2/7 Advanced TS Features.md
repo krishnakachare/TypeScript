@@ -1,10 +1,4 @@
-Great! Now let’s explore **Advanced TypeScript Features**, which are essential for writing scalable, efficient, and maintainable applications.
-
----
-
 # 📘 Chapter 7: Advanced TypeScript Features
-
----
 
 ## 🔹 Generics: Writing Reusable Code
 
@@ -52,8 +46,6 @@ class Storage<T> {
 const numStorage = new Storage<number>();
 numStorage.addItem(5);
 ```
-
----
 
 ## 🔍 Type Guards: Checking Types at Runtime
 
@@ -105,8 +97,6 @@ function isCat(animal: any): animal is Cat {
 }
 ```
 
----
-
 ## 🔄 Mapped Types: Transforming Types
 
 Mapped types allow modifying an existing type dynamically.
@@ -119,8 +109,6 @@ type PartialPerson = {
 };
 ```
 
----
-
 ## 🔀 Conditional Types: Dynamic Type Selection
 
 Conditional types use `extends` to **evaluate** a condition.
@@ -132,17 +120,15 @@ type A = IsString<string>; // "Yes"
 type B = IsString<number>; // "No"
 ```
 
----
-
 ## 🧰 Utility Types: Prebuilt Type Modifiers
 
-| Utility Type  | Description                             |
-| ------------- | --------------------------------------- |
-| `Partial<T>`  | Makes all properties optional           |
-| `Required<T>` | Makes all properties required           |
-| `Readonly<T>` | Prevents modification of properties     |
-| `Pick<T, K>`  | Selects specific properties from a type |
-| `Omit<T, K>`  | Removes specific properties from a type |
+| Utility Type | Description |
+| - | |
+| `Partial<T>` | Makes all properties optional |
+| `Required<T>` | Makes all properties required |
+| `Readonly<T>` | Prevents modification of properties |
+| `Pick<T, K>` | Selects specific properties from a type |
+| `Omit<T, K>` | Removes specific properties from a type |
 
 ### 🛠 Example:
 
@@ -157,14 +143,12 @@ type PartialUser = Partial<User>;
 type ReadonlyUser = Readonly<User>;
 ```
 
----
-
 ## 🧠 Summary
 
-| Feature               | Description                            |
-| --------------------- | -------------------------------------- |
-| **Generics**          | Enables reusability with type safety   |
-| **Type Guards**       | Helps in runtime type checking         |
-| **Mapped Types**      | Modifies existing types dynamically    |
-| **Conditional Types** | Uses conditions to define types        |
-| **Utility Types**     | Prebuilt helpers for common operations |
+| Feature | Description |
+| | -- |
+| **Generics** | Enables reusability with type safety |
+| **Type Guards** | Helps in runtime type checking |
+| **Mapped Types** | Modifies existing types dynamically |
+| **Conditional Types** | Uses conditions to define types |
+| **Utility Types** | Prebuilt helpers for common operations |
