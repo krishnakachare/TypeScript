@@ -1,7 +1,3 @@
-Great! Now, let's explore **Chapter 10: TypeScript with Frontend Frameworks**, where we’ll see how TypeScript enhances popular frontend frameworks like React, Angular, and Vue.
-
----
-
 # 📘 Chapter 10: TypeScript with Frontend Frameworks
 
 ---

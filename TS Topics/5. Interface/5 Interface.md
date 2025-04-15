@@ -1,7 +1,3 @@
-Awesome! Let’s move on to the next foundational chapter: **Interfaces in TypeScript** — a key concept in both frontend and backend TypeScript development.
-
----
-
 # 📘 Chapter 5: Interfaces in TypeScript
 
 ---

@@ -1,7 +1,3 @@
-Awesome! Let’s deep dive into **Chapter 6: Decorators** — one of the most powerful and advanced features of TypeScript, especially useful in frameworks like **Angular** or when building **class-based architecture**.
-
----
-
 # 📘 Chapter 6: Decorators in TypeScript
 
 ---

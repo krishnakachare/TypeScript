@@ -1,7 +1,3 @@
-Great! Now, let’s move on to **Chapter 8: Working with Modules and Namespaces**—a crucial topic for organizing TypeScript code efficiently.
-
----
-
 # 📘 Chapter 8: Working with Modules and Namespaces
 
 ---

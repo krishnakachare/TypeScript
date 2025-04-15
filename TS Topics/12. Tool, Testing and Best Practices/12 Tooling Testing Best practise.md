@@ -1,7 +1,3 @@
-Awesome! Now, let’s move on to the final chapter: **Chapter 12: Tooling and Best Practices**, where we’ll explore essential tools and techniques for writing clean, maintainable, and efficient TypeScript code.  
-
----
-
 # 📘 Chapter 12: Tooling and Best Practices  
 
 ---

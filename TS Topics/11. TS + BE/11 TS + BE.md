@@ -1,7 +1,3 @@
-Great! Now, let's dive into **Chapter 11: TypeScript with Backend Development**, where we explore how TypeScript enhances backend development with **Node.js, Express, and databases**.
-
----
-
 # 📘 Chapter 11: TypeScript with Backend Development
 
 ---
