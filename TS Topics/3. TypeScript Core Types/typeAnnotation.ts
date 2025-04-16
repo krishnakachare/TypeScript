@@ -1,0 +1,1 @@
+static typing  (type annotation)

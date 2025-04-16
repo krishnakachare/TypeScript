@@ -1,0 +1,29 @@
+/* 
+1. Inheritance --> 
+    1. Prototype Inheritance:
+    2. class Inheritance: extends, super().
+
+2. Abstraction : 
+    Involves hiding complex implementation details and showing only the necessary features of an object.
+    Example : Example of calculate age, ATM GUI
+
+3. Encapsulation: 
+    Is the practice of wrapping data(variables) and methods (functions) into a singleunit called a class.
+    “enclosing” or hiding something, that’s exactly what is! With encapsulation, object’s methods and properties are enclosed within the object, so there are not exposed.
+
+    # Getter setter methods use :
+        Access and mutate the properties of an object.
+        Able to achive Encapsulation
+
+4. Polymorphism: It is the combination of both overloading and overriding.
+            Poly: Multipal
+            morphism: Transformation
+    1. Overloading :
+        same class , same method name (same declaration), different signature(different defination).
+
+    2. Overriding :
+        different class , same method name (different declaration), same signature(same defination).
+        Existing functionality override
+
+    # Signature : type of arguments, no of arguments, order of arguments.
+*/

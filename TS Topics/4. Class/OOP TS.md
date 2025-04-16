@@ -1,7 +1,5 @@
 # 📘 Chapter 4: Object-Oriented Programming in TypeScript
 
----
-
 ## 🧱 What is Object-Oriented Programming?
 
 Object-Oriented Programming (OOP) is a programming paradigm that models software using objects. TypeScript enhances JavaScript's class-based programming with features like access modifiers, abstract classes, interfaces, and more.
