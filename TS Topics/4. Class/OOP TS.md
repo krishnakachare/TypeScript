@@ -140,7 +140,7 @@ class Circle extends Shape {
 
 ## ⚖️ Interface vs Abstract Class
 
-| Feature              | Interface            | Abstract Class       |
+| Feature              | Interface            | Abstract Class        |
 |----------------------|----------------------|-----------------------|
 | Implementation       | No                   | Yes                   |
 | Multiple Inheritance | Yes                  | No                    |
@@ -164,12 +164,10 @@ class MathUtil {
 console.log(MathUtil.calculateCircumference(5));
 ```
 
----
-
 ## 🧠 Summary
 
-| Concept                 | Description                                 |
-|-------------------------|---------------------------------------------|
+| Concept                | Description                                 |
+|------------------------|---------------------------------------------|
 | Class                  | Blueprint for creating objects              |
 | Constructor            | Initializes properties                      |
 | Access Modifiers       | Control visibility (`public`, `private`, `protected`) |
