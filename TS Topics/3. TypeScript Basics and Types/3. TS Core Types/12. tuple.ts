@@ -1,48 +1,43 @@
 //Tuple types have the advantage that you can accurately describe the type of an array of mixed types
 
 var tuple: [number, string] = [1, "bob"];
-var secondElement = tuple[1];  // secondElement now has type 'string' 
-
+var secondElement = tuple[1]; // secondElement now has type 'string'
 
 // const person: {
 //   name: string;
 //   age: number;
 // } = {
-    const person: {
-        name: string;
-        age: number;
-        hobbies: string[];
-        role: [number, string];
-      } = {
-        name: 'Maximilian',
-        age: 30,
-        hobbies: ['Sports', 'Cooking'],
-        role: [2, 'author']
-      };
-      
-      // person.role.push('admin');
-      // person.role[1] = 10;
-      
-      // person.role = [0, 'admin', 'user'];
-      
-      let favoriteActivities: string[];
-      favoriteActivities = ['Sports'];
-      
-      console.log(person.name);
-      
-      for (const hobby of person.hobbies) {
-        console.log(hobby.toUpperCase());
-        // console.log(hobby.map()); // !!! ERROR !!!
-      }
-      
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: [number, string];
+} = {
+  name: "Maximilian",
+  age: 30,
+  hobbies: ["Sports", "Cooking"],
+  role: [2, "author"],
+};
 
+// person.role.push('admin');
+// person.role[1] = 10;
 
+// person.role = [0, 'admin', 'user'];
 
+let favoriteActivities: string[];
+favoriteActivities = ["Sports"];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+  // console.log(hobby.map()); // !!! ERROR !!!
+}
 
 //Tuple types have the advantage that you can accurately describe the type of an array of mixed types
 
 var tuple: [number, string] = [1, "bob"];
-var secondElement = tuple[1];  // secondElement now has type 'string' 
+var secondElement = tuple[1]; // secondElement now has type 'string'
 
 // Typically an array contains zero to many objects of a
 // single type. TypeScript has special analysis around
@@ -110,7 +105,10 @@ const monthThreePayments = payStubs[2][2];
 // You can use tuples to describe functions which take
 // an undefined number of parameters with types:
 
-declare function calculatePayForEmployee(id: number, ...args: [...number[]]): number;
+declare function calculatePayForEmployee(
+  id: number,
+  ...args: [...number[]]
+): number;
 
 calculatePayForEmployee(staff[0][0], payStubs[0][1]);
 calculatePayForEmployee(staff[1][0], payStubs[1][1], payStubs[1][2]);
@@ -119,3 +117,19 @@ calculatePayForEmployee(staff[1][0], payStubs[1][1], payStubs[1][2]);
 // https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions
 // https://auth0.com/blog/typescript-3-exploring-tuples-the-unknown-type/
 
+//===================================
+// const user: (string | number)[] = [1, "hc"]
+let tUser: [string, number, boolean];
+
+tUser = ["hc", 131, true];
+
+let rgb: [number, number, number] = [255, 123, 112];
+
+type User = [number, string];
+
+const newUser: User = [112, "example@google.com"];
+
+newUser[1] = "hc.com";
+newUser.push(true);
+
+export {};
