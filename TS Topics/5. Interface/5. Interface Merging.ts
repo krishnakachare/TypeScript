@@ -133,3 +133,120 @@ console.log(window.myAppVersion); // 1.0.0
 - ✅ Useful for extending built-in or third-party types.
 
  */
+
+/* 
+# Merging Interfaces in TypeScript
+
+## What is Interface Merging?
+In **TypeScript**, if you declare multiple interfaces with the **same name**, TypeScript **automatically merges** them into a single interface.
+
+---
+
+## Example 1: Basic Interface Merging
+
+```typescript
+// First declaration
+interface User {
+  name: string;
+}
+
+// Second declaration (same name)
+interface User {
+  age: number;
+}
+
+// Now 'User' has both properties: 'name' and 'age'
+const user: User = {
+  name: "Alice",
+  age: 30
+};
+```
+
+### Explanation:
+- The `User` interface is declared **twice**.
+- TypeScript **merges** them into a **single `User` interface**.
+- You must provide both `name` and `age` when creating an object.
+
+---
+
+## Example 2: Merging Interfaces with Functions
+
+```typescript
+// First declaration
+interface Logger {
+  log(message: string): void;
+}
+
+// Second declaration
+interface Logger {
+  error(errorMessage: string): void;
+}
+
+// 'Logger' now has both 'log' and 'error' methods
+class ConsoleLogger implements Logger {
+  log(message: string) {
+    console.log("LOG:", message);
+  }
+
+  error(errorMessage: string) {
+    console.error("ERROR:", errorMessage);
+  }
+}
+```
+
+### Explanation:
+- Both `log` and `error` methods are **merged**.
+- `ConsoleLogger` must **implement both methods**.
+
+---
+
+## Example 3: Function Overloads with Interface Merging
+
+```typescript
+// First declaration
+interface Adder {
+  (a: number, b: number): number;
+}
+
+// Second declaration
+interface Adder {
+  (a: string, b: string): string;
+}
+
+const add: Adder = (a: any, b: any) => a + b;
+
+// Usage
+console.log(add(5, 10));     // 15
+console.log(add("5", "10")); // "510"
+```
+
+### Explanation:
+- `Adder` supports both **number addition** and **string concatenation**.
+- Function signatures are merged.
+
+---
+
+## Important Rules About Merging
+- If **properties** have the same name, their **types must be compatible**.
+- **Function signatures** (overloads) are **combined**.
+
+---
+
+## Summary
+
+| Topic                  | Description |
+|-------------------------|-------------|
+| When?                   | When two interfaces have the same name. |
+| How?                    | TypeScript merges their members together. |
+| Key thing to watch for  | Conflicting property types must be compatible. |
+| Useful for              | Extending types, modular design, adding features later. |
+
+---
+
+## Tip
+Interface merging is especially useful when working with **third-party libraries** or **modular app design**.
+
+*/
+
+
+

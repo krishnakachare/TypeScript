@@ -55,15 +55,16 @@
 
 5. Interfaces & Type System
 
-- Interfaces
-- Interfaces vs Abstract Classes
-- Interfaces vs Type Aliases
+- Interface(for object)
 - Optional & Readonly Props
-- Extending Interfaces
+- Extending Interfaces (Extending multipal interfaces)
 - Interface Merging
+- Interface implements on the class
 - Function Types with Interfaces
-- Index Signatures
+- Index Signatures (Interface for Array Type)
 - Structural Typing
+- Interfaces vs Type Aliases
+- Interfaces vs Abstract Classes
 
 6. Advanced TypeScript
 
