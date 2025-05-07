@@ -62,7 +62,7 @@
 - Interface implements on the class
 - Function Types with Interfaces
 - Index Signatures (Interface for Array Type)
-- Structural Typing
+- Structural/Duck Typing
 - Interfaces vs Type Aliases
 - Interfaces vs Abstract Classes
 
