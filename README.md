@@ -33,28 +33,29 @@
 
 ### Typescript Resources:
 
-• [ Official TypeScript Docs:](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
-• [ tsconfig Docs: ](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
-• [ Compiler Config Docs: ](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
-• [ VS Code TS Debugging: ](https://code.visualstudio.com/docs/typescript/typescript-debugging)
-• [ More on (JS) Classes: ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-• [ More on TS Interfaces: ](https://www.typescriptlang.org/docs/handbook/2/objects.html)
-• [ More on Advanced Types: ](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)
-• [ More on Generics: ](https://www.typescriptlang.org/docs/handbook/generics.html)
-• [ More on Decorators: ](https://www.typescriptlang.org/docs/handbook/decorators.html)
-• [ JavaScript Modules (Overview): ](https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b)
-• [ More on ES Modules: ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- 🔗[ Official TypeScript Docs:](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+- 🔗[ tsconfig Docs: ](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+- 🔗[ Compiler Config Docs: ](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+- 🔗[ VS Code TS Debugging: ](https://code.visualstudio.com/docs/typescript/typescript-debugging)
+- 🔗[ More on (JS) Classes: ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- 🔗[ More on TS Interfaces: ](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+- 🔗[ More on Advanced Types: ](https://www.typescriptlang.org/docs/handbook/2/types-from-types.html)
+- 🔗[ More on Generics: ](https://www.typescriptlang.org/docs/handbook/generics.html)
+- 🔗[ More on Decorators: ](https://www.typescriptlang.org/docs/handbook/decorators.html)
+- 🔗[ JavaScript Modules (Overview): ](https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b)
+- 🔗[ More on ES Modules: ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 ---
 
-• [ Project:Drag & Drop More on Drag & Drop: ](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
-• [ Project select & share a place:Google Maps Pricing: ](https://cloud.google.com/maps-platform/pricing/sheet/)
-• [Google Geocoding API: ](https://developers.google.com/maps/documentation/geocoding/start)
-• [Google Maps JS SDK: ](https://developers.google.com/maps/documentation/javascript/tutorial)
+- 🔗[ Project:Drag & Drop More on Drag & Drop: ](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
+- 🔗[ Project select & share a place:Google Maps Pricing: ](https://cloud.google.com/maps-platform/pricing/sheet/)
+- 🔗[Google Geocoding API: ](https://developers.google.com/maps/documentation/geocoding/start)
+- 🔗[Google Maps JS SDK: ](https://developers.google.com/maps/documentation/javascript/tutorial)
 
 ---
 
-• React+TS:
-• [ Official React Docs: ](https://reactjs.org/docs/getting-started.html)
-• [ More React Resources: ](https://academind.com/learn/react/)
-• [ create-react-app + TypeScript Docs: ](https://create-react-app.dev/docs/adding-typescript/)
+### React+TS:
+
+- 🔗[ Official React Docs: ](https://reactjs.org/docs/getting-started.html)
+- 🔗[ More React Resources: ](https://academind.com/learn/react/)
+- 🔗[ create-react-app + TypeScript Docs: ](https://create-react-app.dev/docs/adding-typescript/)
