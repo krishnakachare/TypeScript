@@ -5,4 +5,4 @@ function sendAnalytics(data: string) {
   logged = true;
 }
 
-sendAnalytics('The data');
+sendAnalytics("The data");

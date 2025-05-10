@@ -82,16 +82,3 @@ if (pet instanceof Dog) {
 } else {
   pet.woof(); // Error
 }
-
-/*Note on Type Guards:
-A common pattern in JavaScript is to use typeof or instanceof to examine the type of an expression at runtime. 
-TypeScript now understands these conditions and will change type inference accordingly when used in an if block.
-This is called a type guard.*/
-
-var x: any = "Tom"; //Line A
-if (typeof x === "string") {
-  //Line B
-  console.log(x.lengthX); // Error, 'lengthX' does not exist on 'string' but 'lenght' does
-}
-// x is still any here
-x.unknown(); // OK
