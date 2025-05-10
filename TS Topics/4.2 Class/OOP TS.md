@@ -34,6 +34,7 @@ john.greet();
 ## 🔒 Access Modifiers
 
 ### 1. `public` (default)
+
 Accessible from anywhere.
 
 ```ts
@@ -41,6 +42,7 @@ public name: string;
 ```
 
 ### 2. `private`
+
 Accessible only within the class.
 
 ```ts
@@ -48,6 +50,7 @@ private age: number;
 ```
 
 ### 3. `protected`
+
 Accessible within the class and its subclasses.
 
 ```ts
@@ -140,11 +143,11 @@ class Circle extends Shape {
 
 ## ⚖️ Interface vs Abstract Class
 
-| Feature              | Interface            | Abstract Class        |
-|----------------------|----------------------|-----------------------|
-| Implementation       | No                   | Yes                   |
-| Multiple Inheritance | Yes                  | No                    |
-| Use Case             | Contract Definition  | Shared Implementation |
+| Feature              | Interface           | Abstract Class        |
+| -------------------- | ------------------- | --------------------- |
+| Implementation       | No                  | Yes                   |
+| Multiple Inheritance | Yes                 | No                    |
+| Use Case             | Contract Definition | Shared Implementation |
 
 ---
 
@@ -166,11 +169,11 @@ console.log(MathUtil.calculateCircumference(5));
 
 ## 🧠 Summary
 
-| Concept                | Description                                 |
-|------------------------|---------------------------------------------|
-| Class                  | Blueprint for creating objects              |
-| Constructor            | Initializes properties                      |
-| Access Modifiers       | Control visibility (`public`, `private`, `protected`) |
-| Inheritance            | One class inherits from another             |
-| Abstract Class         | Define contracts and partial implementations|
-| Static Members         | Accessed on the class, not on instances     |
+| Concept          | Description                                           |
+| ---------------- | ----------------------------------------------------- |
+| Class            | Blueprint for creating objects                        |
+| Constructor      | Initializes properties                                |
+| Access Modifiers | Control visibility (`public`, `private`, `protected`) |
+| Inheritance      | One class inherits from another                       |
+| Abstract Class   | Define contracts and partial implementations          |
+| Static Members   | Accessed on the class, not on instances               |

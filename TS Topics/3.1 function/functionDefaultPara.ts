@@ -1,51 +1,39 @@
-function buildName(firstName: string, lastName = "Khan") : string {//Named function with optional and default parameters
-    if (lastName)
-        return firstName + " " + lastName;
-    else
-        return firstName;
+function buildName(firstName: string, lastName = "Khan"): string {
+  //Named function with optional and default parameters
+  if (lastName) return firstName + " " + lastName;
+  else return firstName;
 }
 
-var result1 = buildName("Bob");  //works correctly because last parameter is optional
+var result1 = buildName("Bob"); //works correctly because last parameter is optional
 //var result2 = buildName("Bob", "Adams", "Sr.");  //error, too many parameters
-var result3 = buildName("Bob", "Adams");  //correct
-
-
+var result3 = buildName("Bob", "Adams"); //correct
 
 //anonymous function type with defult parameters (Note that the parameter type will be optional when used with defult value)
-var buildName1 : (firstName: string, lastName?: string) => string = 
-function(firstName: string, lastName = "Khan") : string {
-    if (lastName)
-        return firstName + " " + lastName;
-    else
-        return firstName;
-}
-
+var buildName1: (firstName: string, lastName?: string) => string = function (
+  firstName: string,
+  lastName = "Khan"
+): string {
+  if (lastName) return firstName + " " + lastName;
+  else return firstName;
+};
 
 //Named function with optional and default parameters
 //(Note that the parameter type will be optional when used with default value)
-function buildName(firstName: string, lastName = "Khan") : string {
-    if (lastName)
-        return firstName + " " + lastName;
-    else
-        return firstName;
+function buildName(firstName: string, lastName = "Khan"): string {
+  if (lastName) return firstName + " " + lastName;
+  else return firstName;
 }
 
-let result1 = buildName("Bob");  //works correctly because last parameter is optional
-let result2 = buildName("Bob", "Adams", "Sr.");  //error, too many parameters
-let result3 = buildName("Bob", "Adams");  //correct
+let result1 = buildName("Bob"); //works correctly because last parameter is optional
+let result2 = buildName("Bob", "Adams", "Sr."); //error, too many parameters
+let result3 = buildName("Bob", "Adams"); //correct
 
-
-
-//anonymous function type with defult parameters 
+//anonymous function type with defult parameters
 //(Note that the parameter type will be optional when used with defult value)
-let buildName1 : (firstName: string, lastName?: string) => string = 
-function(firstName: string, lastName = "Khan") : string {
-    if (lastName)
-        return firstName + " " + lastName;
-    else
-        return firstName;
-}
-											
-						
-											
-						
+let buildName1: (firstName: string, lastName?: string) => string = function (
+  firstName: string,
+  lastName = "Khan"
+): string {
+  if (lastName) return firstName + " " + lastName;
+  else return firstName;
+};

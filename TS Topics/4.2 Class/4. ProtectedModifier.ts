@@ -47,9 +47,8 @@ class User {
   readonly city: string = "Jaipur";
   constructor(
     public email: string,
-    public name: string
-  ) // private userId: string
-  {}
+    public name: string // private userId: string
+  ) {}
   private deleteToken() {
     console.log("Token deleted");
   }

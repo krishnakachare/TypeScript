@@ -1,24 +1,26 @@
-type Admin = {
+// type --> intersection (&)
+
+type Admin1 = {
   name: string;
   privileges: string[];
 };
 
-type Employee = {
+type Employee1 = {
   name: string;
   startDate: Date;
 };
 
-// interface ElevatedEmployee extends Employee, Admin {}
+// interface ElevatedEmployee1 extends Employee1, Admin1 {}
 
-type ElevatedEmployee = Admin & Employee;
+type ElevatedEmployee1 = Admin1 & Employee1;
 
-const e1: ElevatedEmployee = {
+const ee1: ElevatedEmployee1 = {
   name: "Krishna",
   privileges: ["create-server"],
   startDate: new Date(),
 };
 
-type Combinable = string | number;
-type Numeric = number | boolean;
+type Combinable1 = string | number;
+type Numeric1 = number | boolean;
 
-type Universal = Combinable & Numeric;
+type Universal1 = Combinable & Numeric;

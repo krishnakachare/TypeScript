@@ -44,13 +44,13 @@ function printEmployeeInformation(emp: UnknownEmployee) {
 
 printEmployeeInformation({ name: "Manu", startDate: new Date() });
 
-class Car {
+class Car1 {
   drive() {
     console.log("Driving...");
   }
 }
 
-class Truck {
+class Truck1 {
   drive() {
     console.log("Driving a truck...");
   }
@@ -60,17 +60,17 @@ class Truck {
   }
 }
 
-type Vehicle = Car | Truck;
+type Vehicle1 = Car1 | Truck1;
 
-const v1 = new Car();
-const v2 = new Truck();
+const vv1 = new Car1();
+const vv2 = new Truck1();
 
-function useVehicle(vehicle: Vehicle) {
+function useVehicle1(vehicle: Vehicle1) {
   vehicle.drive();
-  if (vehicle instanceof Truck) {
+  if (vehicle instanceof Truck1) {
     vehicle.loadCargo(1000);
   }
 }
 
-useVehicle(v1);
-useVehicle(v2);
+useVehicle1(v1);
+useVehicle1(v2);

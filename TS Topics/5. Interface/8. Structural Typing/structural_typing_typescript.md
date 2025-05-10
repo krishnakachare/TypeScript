@@ -1,4 +1,3 @@
-
 # Structural Typing in TypeScript
 
 **Structural Typing** in TypeScript is a way of comparing types based on their actual structure (the shape of the data) rather than their declared names or where they were defined. This concept is also known as **"duck typing"**, which follows the idea:
@@ -48,7 +47,7 @@ greet(user); // ✅ Allowed! Structure matches `Person`
 
 ```typescript
 const incompleteUser = {
-  name: "Bob"
+  name: "Bob",
 };
 
 greet(incompleteUser); // ❌ Error: Property 'age' is missing
@@ -99,7 +98,10 @@ TypeScript may flag this as an error due to extra properties in object literals 
 
 ```typescript
 type Point = { x: number; y: number };
-interface Coord { x: number; y: number }
+interface Coord {
+  x: number;
+  y: number;
+}
 let p: Point = { x: 1, y: 2 };
 let c: Coord = p; // ✅ Compatible: same structure
 ```
@@ -108,9 +110,9 @@ let c: Coord = p; // ✅ Compatible: same structure
 
 ## 🧩 Summary
 
-| Feature             | Structural Typing                     |
-|---------------------|---------------------------------------|
-| Basis of comparison | Structure (members & types)           |
-| Flexibility         | High — objects with matching shape    |
+| Feature             | Structural Typing                                 |
+| ------------------- | ------------------------------------------------- |
+| Basis of comparison | Structure (members & types)                       |
+| Flexibility         | High — objects with matching shape                |
 | Inheritance needed? | ❌ No explicit `extends` or `implements` required |
-| Common in           | TypeScript, Go, JavaScript (dynamically) |
+| Common in           | TypeScript, Go, JavaScript (dynamically)          |
