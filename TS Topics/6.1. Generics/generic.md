@@ -70,7 +70,7 @@ lengthLogger([1, 2, 3]); // OK
 You can assign default types to generics if none are provided.
 
 ```ts
-function wrapValue<T = string>(value: T): T {
+function wrapValue<T = string>(value: T = "" as T): T {
   return value;
 }
 
