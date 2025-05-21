@@ -111,7 +111,8 @@
 - `try` / `catch` / `finally`
 - Custom Errors
 - Type Narrowing with Errors
-- Debugging TS in VSCode
+- Debugging TS in VSCode:
+  console.log(), debugger, VSC breakpoints
 - Source Maps
 
 10. TypeScript in Frontend Frameworks

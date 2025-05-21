@@ -79,6 +79,120 @@ Use `export` only when you intentionally want to **expose** parts of the namespa
 - outside the namespace (even in the same file), or
 - in other files (with `/// <reference>` or concatenated `--outFile` builds).
 
+======================================================================================
+
+### ✅ **Namespaces in TypeScript** – Accessing Across Files (Detailed Explanation with Example)
+
 ---
 
-Let me know if you'd like an example with multiple namespaces or how it behaves when compiled!
+### 🔷 What is a Namespace?
+
+A **namespace** in TypeScript is a way to **organize code into logical groups** and **prevent name collisions**. Unlike ES Modules (which are file-based), namespaces group multiple types/functions/values under a single **global identifier**.
+
+---
+
+### 🔷 Why Use Namespaces?
+
+- Helps organize code in large projects.
+- Groups related functions, interfaces, etc.
+- Useful in **older TypeScript projects** or **in-browser scripts** (less common in modern Node/React apps, which use ES Modules).
+
+---
+
+## ✅ Accessing a Namespace Across Files
+
+### 🔧 Step-by-Step Setup
+
+#### 📁 Folder Structure
+
+```
+src/
+├── geometry.ts        ← defines the namespace
+└── main.ts            ← accesses the namespace
+```
+
+---
+
+### 📄 `geometry.ts` – Define the Namespace
+
+```ts
+namespace Geometry {
+  export function areaOfCircle(radius: number): number {
+    return Math.PI * radius * radius;
+  }
+
+  export function areaOfSquare(side: number): number {
+    return side * side;
+  }
+}
+```
+
+> ✅ **Note**: Use `export` keyword inside the namespace to make members accessible from outside.
+
+---
+
+### 📄 `main.ts` – Use the Namespace
+
+```ts
+/// <reference path="./geometry.ts" />
+
+console.log("Area of Circle:", Geometry.areaOfCircle(5)); // Output: 78.5398
+console.log("Area of Square:", Geometry.areaOfSquare(4)); // Output: 16
+```
+
+> ✅ The `/// <reference path="...">` directive is **required** to use a namespace defined in another file.
+
+---
+
+## 🔍 Important Notes
+
+| Feature                   | Detail                                                            |
+| ------------------------- | ----------------------------------------------------------------- |
+| `export` inside namespace | Makes functions/classes accessible outside the namespace          |
+| `/// <reference ...>`     | Tells TypeScript compiler to include that file before compiling   |
+| Compile manually          | You must use `tsc --outFile` to bundle namespaced files correctly |
+
+---
+
+### 🛠️ How to Compile Namespaced Files
+
+```bash
+tsc --outFile dist/bundle.js src/geometry.ts src/main.ts
+```
+
+> ✔️ This will **combine the files** into one output (`bundle.js`) where namespaces are properly linked.
+
+---
+
+## ✅ Modern Alternative: Use ES Modules (Recommended)
+
+Instead of using namespaces with `/// <reference>`, modern projects should use **ES Module imports**:
+
+### 📄 `geometry.ts`
+
+```ts
+export function areaOfCircle(radius: number): number {
+  return Math.PI * radius * radius;
+}
+```
+
+### 📄 `main.ts`
+
+```ts
+import { areaOfCircle } from "./geometry";
+
+console.log(areaOfCircle(5));
+```
+
+> ✅ This is the modern way to structure projects — compatible with bundlers like Vite, Webpack, and supported by all editors and tools.
+
+---
+
+## ✅ Summary Table
+
+| Feature             | Namespace (Classic)          | ES Modules (Modern)     |
+| ------------------- | ---------------------------- | ----------------------- |
+| File linking method | `/// <reference path="...">` | `import/export`         |
+| Compilation         | `tsc --outFile ...`          | `tsc` or bundler        |
+| Scoping             | Global (within namespace)    | File-based              |
+| Use case            | Browser scripts, legacy      | Node.js, React, Angular |

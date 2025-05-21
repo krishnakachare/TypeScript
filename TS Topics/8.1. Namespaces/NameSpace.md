@@ -131,6 +131,3 @@ This merges all files into a single output file where namespaces help manage sco
 
 > ✅ **Recommendation**: Use **modules** (`import/export`) for modern development. Use **namespaces** in legacy projects or when not using a module loader.
 
----
-
-Would you like a real-world example using HTML and namespaces in a browser context?
