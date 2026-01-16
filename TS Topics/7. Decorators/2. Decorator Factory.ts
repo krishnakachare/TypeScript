@@ -1,6 +1,6 @@
 /* 
 Decorators Factory:
-Can pass parameters into a decorator by returning a decorator function from another function.
+  Can pass parameters into a decorator by returning a decorator function from another function.
 */
 
 function Logger1(logString: string) {
