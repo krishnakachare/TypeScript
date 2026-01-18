@@ -185,5 +185,3 @@ console.log(findUser(userList, 'Bob'));
 | Works with | VS Code, Chrome DevTools, Node.js debugger  |
 | Needs      | `"sourceMap": true` in `tsconfig.json`      |
 | Use Case   | Inspect values, trace execution, debug flow |
-
-

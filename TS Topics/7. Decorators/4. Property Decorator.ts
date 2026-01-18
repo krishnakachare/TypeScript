@@ -17,3 +17,11 @@ class Product {
   }
 }
 ``` */
+
+/* 
+Because you can:
+✔ Identify which property is decorated
+✔ Store metadata about it
+✔ Modify how it behaves later (getter/setter)
+✔ Apply validation, transformation, logging
+*/
