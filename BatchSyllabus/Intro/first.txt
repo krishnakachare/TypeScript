@@ -1,0 +1,18 @@
+Check typescript version
+tsc -v
+
+(tsc) Typescript Compiler
+----------------------------------------------
+
+Typescript code execution flow:
+.ts --> Compile(tsc) ---> .js ---> node fileName.js ---> .js file output
+
+------------
+
+.ts
+
+compile --> tsc fileName
+
+.js
+
+.js --> node fileName

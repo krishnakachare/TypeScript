@@ -1,0 +1,26 @@
+// Decorators:
+
+// Decorators dells with the classes
+// Decorators is a special function which can modify :
+// class, property, methods, arug,
+
+# 7. Decorators
+
+- What Are Decorators?
+- Enabling Decorators via `tsconfig.json`
+- Decorator Factories
+- Types of Decorators:
+  - Class
+  - Property
+  - Method
+  - Accessor
+  - Parameter
+
+
+  ✅ 2. Then why is propertyKey useful?
+
+Because you can:
+✔ Identify which property is decorated
+✔ Store metadata about it
+✔ Modify how it behaves later (getter/setter)
+✔ Apply validation, transformation, logging

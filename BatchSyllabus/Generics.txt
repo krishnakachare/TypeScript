@@ -1,0 +1,14 @@
+# Generics:
+
+- Functions, Interfaces, Classes
+- Constraints and Defaults
+- Utility Types: `Partial`, `Required`, `Readonly`
+
+
+Advance Types in TS:
+ Generic --> Is way of type annotation
+ Can type annotation --> mutipal places
+ Moto : flexible, reusable
+
+
+- Array generics

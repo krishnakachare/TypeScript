@@ -1,0 +1,18 @@
+1. commanJs module:
+
+    module.exports = code
+    let variableName = require("path")
+
+    // install for using node types:
+// npm i --save-dev @types/node
+
+2. ES6 modeule:
+
+    export code
+    import {} from "path"
+
+    export default code
+    import variableName from "path"
+
+    multipal export
+    import * as variableName from "path"

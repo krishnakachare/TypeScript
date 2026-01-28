@@ -1,0 +1,98 @@
+- ts + HTML
+- Datatypes:
+ 1. Primitive(immutable): string, number, boolean, undefined, null, never, unknown, void
+ 2. Special datatype: any, literal, union(|), intersection(&) ,type
+ 3. Non-Primitive(mutable, user defined): array, object, class, function, tuple -> ?, enum, interface
+
+ - Inferance vs annotation
+ - -w
+ - type assertion
+
+/* 
+enum: enumerated list or unchanged variables list
+
+syntax: enum enumName { const1, const2, ...., constn}
+
+can retrive: enumName.variableName
+
+Note: variables holds const value, cant update it
+
+*/
+
+/* 
+
+any, undefined, null, never, unknown, void
+
+undefined: A variable that has been declared but not assigned a value. It represents the absence of a value.
+
+null: A value that explicitly represents the absence of a value.
+
+never: A type that represents a value that never occurs. It is used for functions that never return.
+
+unknown: A type that represents any value. It is the most general type in TypeScript.
+
+void: A type that represents the absence of a return value. It is used for functions that do not return anything.
+
+*/
+
+// TS advantage: type restriction.
+// use any type:
+// any not recommended in ts because it removes all the advantages of typescript
+
+// Union Type
+// can combine multiple data types using | .
+// | pipe, or operator
+
+// union (|) --> OR type
+
+// intersection (&): combine types
+
+
+// NOTE:
+/* 
+- Any holding any type and can able to do any operations with it.
+- Unknow can hold any type. But any time of operations need to check type check then only can able to do operations with unknown
+*/
+
+// type alias or custome type
+
+/* 
+ type typeName = type
+*/
+
+
+
+// literal Type
+
+
+/* 
+interface:
+
+  what is interface ?
+      An interface is a TypeScript structure used to define the shape of an object.
+      object means --> object, class, function
+
+
+syntax: 
+
+    interface interfaceName {
+        keyName: type
+    }
+*/
+
+/* 
+type vs interface :
+
+# type:
+  - type literal no for class, only type annotate in class defination
+  - used for specific primitive datatype
+  - Can able to do Intersection(&), Union(|)
+
+==========================================
+
+# interface:
+  - defining structure for object, function, class
+  - used for specific non-primitive datatype
+  - can able to do extends, merging, add modifiers & indexing
+
+*/

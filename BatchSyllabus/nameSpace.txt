@@ -1,0 +1,17 @@
+namespace : Logical grouping of modules
+            Have global scope
+
+syntax: 
+exports namespace namespaceName{
+    exports code
+}
+
+
+- namesapce can able to access within same file
+- can able to export namesapce & import
+- can access globally:
+  ///<reference path=''>
+     namespaceName.variableName
+
+     tsc fileName.ts --outFile fileName.js
+     //  tsc .\nameSpace2.ts --outFile nameSpace2.js
