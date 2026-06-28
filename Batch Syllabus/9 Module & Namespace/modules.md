@@ -1,0 +1,5 @@
+- ES Modules:
+  - Named / Default Exports
+  - Import Variants
+- Namespaces (legacy use)
+- Path Aliases

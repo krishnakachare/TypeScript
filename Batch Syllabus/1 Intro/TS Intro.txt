@@ -29,3 +29,25 @@ History, Evalution, Purpose :
     // Messaging
     // Post, wire, WWW
     // Browser --> www -->  HTML, JS
+
+
+
+
+Strongly/Static Typed : Cant changed initialized datatype
+Dynamicaly typed : Can change initialized datatype
+
+TS code execution flow:
+    TS Code ---> Compile ---> JS Code ---> output
+
+Compile: Code converting one programing lang to another programing lang
+        TS using tsc for code compile
+
+Use of Typescript:
+    Front End : Angular, React
+    Back End : NodeJS
+    Testing : Cypress, Playwright
+
+Limitations of TypeScript:
+   1. Execution time is slightly more
+   2. Script packages are heavy
+   3. Not directly execute

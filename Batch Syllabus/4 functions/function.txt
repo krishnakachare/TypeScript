@@ -1,0 +1,24 @@
+/*
+let variableName : type
+
+let fun: Function;
+
+function funName(para1: type1, para2: type2):returnType{
+     // steps
+}
+funName(arg1, arg2);
+*/
+
+// Default parameter in function:
+
+// let fun: (p: number, q: number) => number = function (a, b) {
+//   return a + b;
+// };
+
+
+Optional parameter
+
+spread rest operator
+
+
+arrow function

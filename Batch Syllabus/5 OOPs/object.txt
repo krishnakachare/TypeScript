@@ -1,0 +1,5 @@
+let obj:Object
+let obj:{}
+let obj:{} ---> literal
+let obj:type
+let obj:interface

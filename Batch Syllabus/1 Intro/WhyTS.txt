@@ -1,0 +1,9 @@
+# Advantages of TS:
+1. Static typed
+2. Code error can encounter at time of compilation
+3. TS features 
+
+
+# Disadvantages of TS:
+1. Execution time is more
+2. TS not directly execute
