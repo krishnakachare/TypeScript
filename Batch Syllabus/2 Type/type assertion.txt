@@ -1,0 +1,6 @@
+// Type Assertion:  Type conversion
+
+/* 
+variableName as type
+<type> variableName
+*/
