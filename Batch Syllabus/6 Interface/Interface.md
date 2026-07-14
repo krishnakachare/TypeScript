@@ -12,22 +12,10 @@
     - Interfaces vs Type Aliases
     - Interfaces vs Abstract Classes
 
+# Interface Merging: Merging --> Combine
 
-
-
-    /* 
-Interface Merging:
-    Merging --> Combine
     If you declare multiple interfaces with the same name, TypeScript automatically merges them into a single interface.
-*/
 
+# Optional properties (?) in interface:
 
-// optional properties (?) in interface: We can make flexible structure
-
-
-/*
-Interface Merging:
-    Merging --> Combine
-    If you declare multiple interfaces with the same name, TypeScript automatically merges them into a single interface.
-*/
-
+    We can make flexible structure
