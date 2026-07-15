@@ -139,6 +139,8 @@
 
 12. Tooling, Testing, and Best Practices
 
+- TypeScript best coding practices
+- TypeScript Exceptional handling
 - Linting: ESLint + TypeScript Plugin
 - Formatting: Prettier
 - Clean Code Principles
