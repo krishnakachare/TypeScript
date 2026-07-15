@@ -1,4 +1,4 @@
-### "Typescript"
+### TypeScript 👉
 
 ### Author Links:
 
