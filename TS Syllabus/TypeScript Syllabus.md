@@ -137,10 +137,9 @@
 - Type-safe Services & Controllers
 - REST + GraphQL
 
-12. Tooling, Testing, and Best Practices
+12. TypeScript Coding Best Practices & Tools
 
 - TypeScript best coding practices
-- TypeScript Exceptional handling
 - Linting: ESLint + TypeScript Plugin
 - Formatting: Prettier
 - Clean Code Principles
@@ -155,6 +154,10 @@
   - Use Generics for Reuse
   - Immutability
   - Type-First Development
+
+13. TypeScript Coding Principles
+14. TypeScript Error handling
+15. TypeScript Exceptional handling
 
 https://www.typescriptlang.org/docs/handbook/2/basic-types.html
 https://www.tutorialsteacher.com/typescript/typescript-overview
