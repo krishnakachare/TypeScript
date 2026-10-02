@@ -9,6 +9,7 @@
 - [GitHub](https://github.com/krishnakachare)
 - [GitLab](https://gitlab.com/ShrikrishnaKachare)
 - [LinkedIn](www.linkedin.com/in/shrikrishna-g-kachare-9a9411221)
+- [Twitter](https://x.com/shrikrishnakach)
 
 ### ⚙ Free Web Dev Tools:
 
@@ -61,3 +62,11 @@
 - 🔗[ Official React Docs: ](https://reactjs.org/docs/getting-started.html)
 - 🔗[ More React Resources: ](https://academind.com/learn/react/)
 - 🔗[ create-react-app + TypeScript Docs: ](https://create-react-app.dev/docs/adding-typescript/)
+
+- 🔗[ Typescript Tutorial: ](https://www.typescripttutorial.net/)
+
+- 🔗[ JS Bin: ](https://jsbin.com/repuxipuhi/edit?js,console,output)
+
+- 🔗[JS Visualizer:](https://www.jsv9000.app/)
+
+[ TypeScript: ](TypeScript.png)
