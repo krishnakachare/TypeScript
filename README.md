@@ -69,4 +69,4 @@
 
 - 🔗[JS Visualizer:](https://www.jsv9000.app/)
 
-[ TypeScript: ](TypeScript.png)
+![ TypeScript ](TypeScript.png)
